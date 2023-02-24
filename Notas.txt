@@ -1,0 +1,92 @@
+etiquetas meta
+	son etiquetas utilizadas por el navegador para posicionar la pagina web
+	sintaxis <meta name="" content="">
+	como se ve la etiqueta posee dos atributos 
+		name:el cual se usa para identificar el tipo de metadato
+		content:el contenido que posee ese metadato
+	tambien se puede utlizar para evitar fallos de escritura en el avegador como la ñ o los acentos su sintaxis seria <meta charset="UTF-8">
+
+Usos de la etiqueta <strong>
+	Texto informativo;
+	 Alertas;
+	 Advertencias;
+	 Recordatorios;
+	
+usos de la etiqueta <em>
+	Enfasis en un texto
+	
+Titulos
+	h1 es la etiqueta de titulo mas importante que busca el navegador
+	h2 subtitulos
+
+Comentarios
+	sintaxis:<!--text-->
+	se puede utilizar para saber el final de una etiqueta
+
+lista
+	existen dos tipos de lista
+		lista ordenada sintaxis:<ol></ol>
+		lista desordenadas sintaxis:<ul></ul>
+	para añadir elementos a la lista se utiliza la etiqueta <li></li>
+	para añadir lista con varios elementos sin escribir tanto se usa [etiqueta de lista]>li{elementos}*cantidad de elementos que quieras		
+
+insertar carecteres especiales(Entidades HTML)
+	Para que el navegador detecte los carecteres especiales se usan las entidades HTML sintaxis: &entidad;                                                                                                    
+	lista de codigos para caracteres especiales:https://html.spec.whatwg.org/multipage/named-characters.html
+	<meta charsep="UTF-8"> se utiliza para que el navegadro detecte de manera directa los caracteres sin necesidad de colocar las entidades HTML
+
+Definir abreviatura con <abbr>
+	sirve para colocar abreviaturas en la pagina web
+	ejemplo <abbr title="Organizacion de naciones unidas">ONU</abbr>
+	al hacer esto se mostrada la abreviatura y si se coloca en curso encima se mostrada el contenido de el atributo title
+	
+Definiendo Fecha y hora <TIME>
+	se utiliza para que los navegadores entiendan que esta hace referencia a una fecha y lo traten de manera distinta
+	sintaxis:<time datetime="AAAA-MM-DD"||"HH:MM:SS"||"AAAA-MM-DDTHH:MM||"AAAA-MM-DDTHH:MMZ">el dia</time>
+	se entiende que al poner Z al final de la hora como la hora mundial,siendo que se refiere a las 6 en cada pais
+
+etiqueta <small>
+	 se utiliza para:
+	 	Definirlos derechos de autores
+		descargo de responsabilidad
+		Declaracion legal
+	ejemplos:
+	<small>&copy;2014 Todos los derechos reservados</small> 
+	<small>Prohibida la Distribucion de este articulo sin la autorizacion del autor</small>
+	<p>ahora puedes hacer llamadas de forma gratuita <small>(Promocion valida hasta el <time datetime="2023-06-31">31/06/2023</time> solopara equipos post-pago)</small></p>
+	<small><a href="enlace a los prosibles cargos">se pueden aplicar cargos a la compra de este producto</a></small>
+
+figure y figcaption
+	figure funciona como un cuadro en el cual se coloca el contenido y el figcaption
+	sintaxis:<figure>content(img,video,etc)<figcaption></figcaption></figure>
+	figcaption se puede omitir y solo se puede poser una vez
+	figure puede contener:Videos,Fotos,Graficos y Contenido autonomo(tablas estadisticas,etc)
+
+Citas<cite></cite>
+	son citas iguales que los trabajos de investigacion
+	poseen un atributo lang el cual se utiliza para especiar el lenguaje de origen de la cita
+
+citas con q y blockquote
+	q se utiliza poara referencia de una linea dentro de un parrafo y el atributo lang igual a cite
+	y el atributo cite se coloca la url de la pagina de donde sale la cita este solo es para la maquita,no para el usuario
+	y para los casos en donde se necesite citar texto de mayor tamaño que no netra en un parrafó,usaremos la etiqueta <blockquote>,este no puede estar dentro de una etiqueta <p> pero si la cita es mas grade que un parrafo se utilizara la etiqueta <p> en cada parrafo dentro del blockquote,resumiendo blockquote no puede estar dentro de p,pero si al reves.
+	para colocar un titulo a la cita se puede utiliza figure y figcaption siendo el blockquote el contenido,pero tambien se puede colocar detro de blockquote un footer para colocar el titulo
+
+la etiqueta invisibles span
+	nos sirve para encerrar un contenido(normalmente texto corto) y poder colocar algun atributo html como:id,class,lang,ect.
+
+<meter>
+	ghraficas estilo barras
+	sintaxis:<meter min="valr minimo" max="valor maximo="value"valor actual"></meter>
+	en que se puede usar
+		el espacio utilizadoe ne l Distribucion
+		el numero de boletos vendidos
+		resultados de votos
+	atributo	
+		high:valor demaciado alto
+		low:valor demaciado bajo
+		optimum:valor optimo
+
+<progress>
+	etiqueta utilizada para medir el progreso de una accion normalmente se utiliza con javascritf
+	solo tiene dos atributos max y value,funcionando igual que en meter

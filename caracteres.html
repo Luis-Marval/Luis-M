@@ -10,22 +10,25 @@
             <figcaption>
                 Escritorio de linux Ubuntu
             </figcaption>     
-            <img src="17.png" alt="linux" title="ubuntu">
+            <a href="https://ubuntu.com/" target="blank"><img src="images\17.jpge" alt="linux" title="ubuntu" width="400"></a>
         </figure>
         <p>Linux es el Nombre del kernel hecho por <cite>Linux Torbal</cite></p>
-        <progress max="100" value="0" id="barra"></progress><br>
-        <input type="button" value="carga" onclick="setInterval('cargalo()',1000)"><br>
+        <p>
+            <progress max="100" value="0" id="barra"></progress><br>
+            <input type="button" value="carga" onclick="setInterval('cargalo()',1000)"><br>
+        </p>
         <small><a href="enlace a los prosibles cargos">esta imagen posee derechos de autor</a></small>
-        <footer>
-            <p>
+        <footer style="background:black;">
+            <p style="margin-bottom: 0; color:white;">
                 Somos el estudio Web <abbr title="Sociedad Anonima Cerrada">S.A.C</abbr><br>
-                <small>&copy;2014 Todos los derechos reservados</small>
-            </p> 
+                <small>&copy;2014 Todos los derechos reservados</small><br>
+                 </p> 
+                <a href="index.html">Presione aqui para volver a la pagina Principal</a>
         </footer>
         <script>
             function cargalo(){
             var barra=document.getElementById("barra");
-            barra.value+=5;
+            barra.value+=2;
             }
         </script>
     </body>

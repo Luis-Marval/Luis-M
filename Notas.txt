@@ -29,6 +29,7 @@ lista
 		lista desordenadas sintaxis:<ul></ul>
 	para añadir elementos a la lista se utiliza la etiqueta <li></li>
 	para añadir lista con varios elementos sin escribir tanto se usa [etiqueta de lista]>li{elementos}*cantidad de elementos que quieras		
+	posee un atributo type el cual nos permite cambiar el simbolo de la ista
 
 insertar carecteres especiales(Entidades HTML)
 	Para que el navegador detecte los carecteres especiales se usan las entidades HTML sintaxis: &entidad;                                                                                                    
@@ -76,7 +77,7 @@ la etiqueta invisibles span
 	nos sirve para encerrar un contenido(normalmente texto corto) y poder colocar algun atributo html como:id,class,lang,ect.
 
 <meter>
-	ghraficas estilo barras
+	graficas estilo barras
 	sintaxis:<meter min="valr minimo" max="valor maximo="value"valor actual"></meter>
 	en que se puede usar
 		el espacio utilizadoe ne l Distribucion
@@ -90,3 +91,21 @@ la etiqueta invisibles span
 <progress>
 	etiqueta utilizada para medir el progreso de una accion normalmente se utiliza con javascritf
 	solo tiene dos atributos max y value,funcionando igual que en meter
+
+como insertar imagenes en web
+	existen varios formatos y aqui se explica como y cuando utilizarlos
+	gif:se utiliza para crear logos o pequeños detalles en el sitio y tienen que que ser imagenes simples o monocromas,solo posee 252 colores
+	png:es mas detallo que gif y al igual que el ultimo posee transparencia,usar en logotipos, el uso desmerido de estas imagenes puede realentizar tu pagina.posee la mayor variedad de colores
+	jpge:se utiliza cuando se quiera diseños bonitos con calidad aceptable y que pesen poco,tabien en la galeria de imagenes,para imagenes de mas grandes que 600px,este formato no posee transparencia.posee mayor camtidad de colores que gif pero menor que png
+
+etiqueta<form> 
+	sintaxis
+		<form action="nombre_del archivo" method="get/post">......formularios......</form>
+		dentro del atributo action se colocada el nombre del script para procesarlo
+		el atributo method posee dos atributos	
+			get:cuando se envian los datos del formulario se muestra en la url,no es aconsejable que se use en formularios largos(las url pueden tener maximo tres mil caracteres);no sirve para imformacion sencible
+			post:los datos enviados del formalario se mandan de forma interna
+		para que el usuario ingrese los datos peridos por el formulario se utiliza la etiqueta <input>
+
+etiqueta <input>
+	sintaxis: <input type="tipo de campo" value="valor predeterminado" name="nombre del elemento">

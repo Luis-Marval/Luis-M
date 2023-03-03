@@ -108,4 +108,10 @@ etiqueta<form>
 		para que el usuario ingrese los datos peridos por el formulario se utiliza la etiqueta <input>
 
 etiqueta <input>
-	sintaxis: <input type="tipo de campo" value="valor predeterminado" name="nombre del elemento">
+	sintaxis: <input type="tipo de campo" value="valor predeterminado" name="nombre del elemento" size="numero-tamaño de la barra" maxlength="maximo de caracteres" minlength="minimo de caracteres">
+		en el atributo type se colocara el tipo de dato que quedamos del usuario 	entre ellos:
+			text:texto simple
+			email:correo electronico
+			password:contraseña
+			radio:botones radiales(botones para opciones,para esto todos los input radio tiene que tener el mismo atributo en name)
+			checkbox:casila de verificaion, se utiliza cuando queremos que el usuario pueda marcar mas de una opcion

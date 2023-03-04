@@ -7,21 +7,64 @@
 <body>
     <h1>Formulario</h1>
     <form action="index.html" method="get">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" maxlength="4" size="4"><br>
-        <label for="correo">Correo:</label>
-        <input type="email" name="correo" id="correo"><br>
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contrasena" required="" id="contraseña" minlength="12" size="30"><br>
         <p>
-        <input type="radio" name="radio" id="radioA" value="Hombre">
-        <label for="radioA">Hombre</label><br>
-        <input type="radio" name="radio" id="radioB" value="Mujer">
-        <label for="radioB">Mujer</label><br>
-        <input type="radio" name="radio" id="radioC" value="Ninguno">
-        <label for="radioC">Ninguno</label><br>       
+            <label for="correo">Correo de usuario:</label><br>
+            <input type="email" name="correo" id="correo" required="" autofocus="">
         </p>
-        <input type="submit" value="enviar" name="mandar datos">
+        <p>
+            <label for="contraseña">Contraseña de usuario:</label><br>
+            <input type="password" name="contrasena" required="" id="contraseña" minlength="12" size="30"></p>
+        <p>            
+        <p>
+            <label for="tel">Numero de telefono:</label><br>
+            <input type="tel" name="tel" id="tel" size="10"><br>
+        </p>
+        <input type="radio" name="radio" id="radioA" value="Lunes">
+        <label for="radioA">Lunes</label><br>
+        <input type="radio" name="radio" id="radioB" value="Miercoles">
+        <label for="radioB">Miercoles</label><br>
+        <input type="radio" name="radio" id="radioC" value="Viernes">
+        <label for="radioC">Viernes</label><br>       
+        </p>
+        <p>
+            <label for="url">tu sitio</label><br>
+            <input type="url" name="url" id="url" placeholder="ejemplo:https://www.tusitio.com" size="31"><br><br>
+            <label for="busca">Buscar</label><br>
+            <input type="search" name="busca" id="busca" placeholder="ingrese su busqueda"><br><br>
+            <label for="numero">Numero de productos:</label><br>
+            <input type="number" id="numero" name="numero" min="1" max="30" step="2"><br><br>
+            <label for="numer">Experiencia informatica:</label><br>
+            <input type="range" id="numer" name="numer" min="1" max="30"><br><br>
+            <p style="display: inline-block;">
+                <label for="date">date:</label><br>
+                <input type="date" id="date" name="date" ><br><br>
+            </p>
+            <p style="display: inline-block;">            
+                <label for="time">time:</label><br>
+                <input type="time" id="time" name="time" value="6:00"><br><br>
+            </p><br>
+            <label for="colores">Color Favorito:</label><br>
+            <input type="color" name="colores" id="colores"><br><br>
+        </p>
+        <p>
+            <label for="selector">Selecione una opcion:</label>
+            <select name="opciones" id="selector">
+                <optgroup label="Primero">
+                    <option value="1">cambiar nombre</option>
+                    <option value="2">cambiar contraseña</option>
+                </optgroup>
+                <optgroup label="Segundo">
+                    <option value="3">salir</option>
+                    <option value="7">no se</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="bio">Haz tu consulta</label><br>
+            <textarea name="bio" id="bio" cols="28" rows="5"></textarea>
+        </p>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar datos">
     </form>
 </body>
 </html>

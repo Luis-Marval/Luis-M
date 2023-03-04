@@ -108,10 +108,49 @@ etiqueta<form>
 		para que el usuario ingrese los datos peridos por el formulario se utiliza la etiqueta <input>
 
 etiqueta <input>
-	sintaxis: <input type="tipo de campo" value="valor predeterminado" name="nombre del elemento" size="numero-tamaño de la barra" maxlength="maximo de caracteres" minlength="minimo de caracteres">
+	sintaxis: <input type="tipo de campo" value="valor predeterminado" name="nombre del elemento" size="numero-tamaño de la barra" maxlength="maximo de caracteres" minlength="minimo de caracteres" placeholder="un texto fantasma que resaparece cunado escribimos en el cuadro">
 		en el atributo type se colocara el tipo de dato que quedamos del usuario 	entre ellos:
 			text:texto simple
 			email:correo electronico
 			password:contraseña
 			radio:botones radiales(botones para opciones,para esto todos los input radio tiene que tener el mismo atributo en name)
 			checkbox:casila de verificaion, se utiliza cuando queremos que el usuario pueda marcar mas de una opcion
+			submit:boton de envio
+			reset:borrar datos del formulario
+			url:para resivir url dentro de contenido
+			tel:telefono del usuario,los telefonos lo detectan y colocan el teclado en numerico
+			search:no posee validacion
+			number:caja de numeros,solo numeros, este posee atributos como:
+				min:valor minimo
+				max:valor maximo
+				step:valor de salto de numeros
+			range:barra de rango.posee los atributos min="valor minimo" y max="valor maximo"
+			date:Fecha
+			time:Hora
+			color:colores
+
+etiqueta <textarea>
+	sintaxis:<textarea cols="x" rows="x"></textarea>
+	sirve para Comentarios
+	atributos
+		cols:determina la cantidad de caracteres visibles horizontales
+		rows:etermina cantidad de caracteres visibles 
+			los valores por defecto son 20
+
+etiqueta <select>
+	sintaxis
+		<select>
+			<option value="xxx">xxx</option>
+		</select>
+		donde la etiqueta select funciona como una caja de seleccion de varias opciones los cuales se representan con la etiqueta <option> 
+		en esta etiqueta tiene el atributo value que se mandara al js dependiendo de que ocion mando el usuario
+		para que el usuario selecione varias opciones se utilisa el atributo multiple
+		con la etirueta optgroup se puede crear una lista anidadas en select y con su atributo label se le da titulo al optgroup
+
+nuevos atributos de html5 para formularios
+	placeholder:texto fantasma para sugerencia disponible para las etiquetas input y textarea
+	autofocus:para que el cursor aparesca donde este este atributo
+	required:caompos obigatorios
+	disabled:desabilita el cuadro
+	readonly:solo lectura,no escritura
+

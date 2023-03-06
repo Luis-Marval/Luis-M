@@ -154,3 +154,6 @@ nuevos atributos de html5 para formularios
 	disabled:desabilita el cuadro
 	readonly:solo lectura,no escritura
 
+header
+	cabezedo de la pagina
+

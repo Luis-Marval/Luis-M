@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: crimson;
+}
+
+#contenedor{
+    margin-right: 15px;
+    margin-left:15px;
+    outline: 1.5px solid pink;
+    background: white;
+}
+
+.cabeza{
+    background: grey;
+    margin-bottom:0;
+
+}
+
+.navegador{
+    border-bottom: 2px solid red;
+}
+
+ul{margin:0;}
+
+ul li{
+    list-style: none;
+}
+
+.articulo{
+    width: 35em;
+}
+
+.foter{
+    background-color: gray;
+}

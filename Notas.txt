@@ -154,6 +154,42 @@ nuevos atributos de html5 para formularios
 	disabled:desabilita el cuadro
 	readonly:solo lectura,no escritura
 
-header
+header(cabezera)
 	cabezedo de la pagina
 
+nav
+	El elemento HTML <nav> representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.
+		Notas de uso
+			No es necesario que todos los enlaces estén contenidos en un elemento <nav>. <nav> está destinado sólo para el bloque principal de enlaces de navegación; por lo general, el elemento <footer> a menudo tiene una lista de enlaces que no necesitan estar en un elemento <nav>.
+			Un documento puede tener varios elementos <nav>, por ejemplo, uno para la navegación del sitio y otro para la navegación dentro de la página. aria-labelledby puede ser utilizado en tal caso para promover la accesibilidad, ver ejemplo.
+			Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios con discapacidades, pueden usar este elemento para determinar si se omite la representación inicial del contenido de solo navegación.
+
+main
+	la etiqueta main se utiliza para definir el area principal de un sitio
+
+article
+	es utilizada para definir un contenido autónomo y de importancia en una página web
+	pueden ser anidadas
+	La etiqueta <article> puede tener encabezados, párrafos, listas, imágenes y otros elementos HTML como hijos.
+	Algunos ejemplos podrían ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, el comentario de un usuario, un widget o gadget interactivo, o cualquier otro elemento de contenido independiente.
+
+Sectión
+	encerrar objetos con una misma tematica como seria:introduccion,noticias e informacion de contactos,etc.
+	recomendaciones
+		no utilizar section si lo unico que quiere es agrupar contenidopara aplicar estilos(para se eso se usa div)
+		utiliza section cuando su contenido tiene un tema distinto en el contexto en que se encuentra
+		proporcionar title a las section
+
+aside
+	es una etiqueta estructurales que sirve para contener contenido secundario
+	ejemplos
+		lista de articulos,publicidad,bloque para redes sociales,lista de productos relacionadas,calendario de eventos,bloque donde se encuentre la informacion del autor,etc
+	es aconsejable tener la etiqueta main antes que la etiqueta aside
+	el aside puede estar dentro de la etiqueta main
+	no colocar el nav dentro de aside
+
+footer(pie de pagina)	
+	footer representa el pie de pagina de la etiqueta que la contiene
+	
+div(contenedores genericos)
+	sirve igual que la etiqueta section pero este no posee valor semantico y se usa mas para añadir estilos

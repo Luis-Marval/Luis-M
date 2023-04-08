@@ -193,3 +193,19 @@ footer(pie de pagina)
 	
 div(contenedores genericos)
 	sirve igual que la etiqueta section pero este no posee valor semantico y se usa mas para añadir estilos
+
+video
+	etiqueta para colocar video	
+		atributos	
+			controls:muestra el menu del video, el cual dependiendo del navegador se bera distinto
+			autoplay:para que el video se reprodusca de manera automatica
+			loop:el video se repetida despues de finalizar
+			poster:muestra una imagen al fondo del video mientras se carga
+		
+formatos de video en la web	
+	OGG:gratuito. Codec video:Theora, Codec Audio:Vorbis.
+	WebM:gratuito. Codec video:VP8, Codec Audio:Vorbis.
+	MP4:Comercial. Codec video:H.264, Codec Audio:AAC.
+
+Audio
+	la sintaxis es la misma que la  etiqueta video y posee los mismos atributos

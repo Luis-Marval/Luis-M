@@ -1,0 +1,38 @@
+*{ margin:0;}
+
+nav{
+    outline: black solid 2px;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{
+    color:white;background:black;
+}
+
+#pastel{
+    margin-top:3px;
+}
+
+#Principal{
+    border-bottom:3px blue solid;
+}
+
+#Seccion{
+    margin-bottom: 0;border-top:double blue 3px;
+}
+
+#titulo-principal{
+    text-align: center;background-color: crimson;color: aqua;text-shadow: 3px 0px 1px rgba(137,11,119,0.39);
+}
+
+#otro{
+    border-bottom: 3px black double;
+}
+
+.link:hover{
+    color:crimson;
+    font-size:24px;
+}

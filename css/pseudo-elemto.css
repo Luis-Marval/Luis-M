@@ -1,0 +1,18 @@
+p::first-line{
+    background-color: aqua;
+}
+p::first-letter{
+    background-color: red;
+    float: left;
+    font-size: 30px;
+    color: azure;
+    margin-right: 3px;
+}
+
+p::before{
+    content: "Inicio--";
+}
+
+p::after{
+    content: url("../images/17.jpge");
+}

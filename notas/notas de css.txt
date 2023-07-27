@@ -1,0 +1,60 @@
+construccion de estilos en css
+    selector{propiedad:valor}declaracion
+    selector:es a la etiqueta a la que se hace referencia,
+        colocando una "," despues del identificador podra colocar otra etiqueta aparte y ambas recibidan los estilos correspondientes
+        colonado un "." estaremos haciendo referencia a una clase de html
+        colando un "#" estaremos haciendo referencia a un id de html
+    declaracion:es donde se especifica los valores a tomar en los estilos
+    proiedad:es el estilo a colocar
+    valor:valor de la propiedad
+
+como incluir css3 en html5
+    1.estilos en linea:a traves del atributo "style".se recomienda usar este para probar como se veran estilos "basicos" en tu sitio
+    2.estilos enbebidos:a traves de la etiqueta "style".se recomienda colocarlo en el "head" de nuestro sitio
+    3.enlazando estilos:a traves de una etiqueta "link" que haga referencia a un archivo ".css" externo
+
+tipo de selectores
+    Existen distintos tipos de selectores: 
+
+        Selector universal. Afecta a todo el documento. 
+        De elementos. Es el más común y selecciona partes concretas, como, por ejemplo, un párrafo.
+        Clases e ids. Las clases y los ids se definen en HTML y se pueden seleccionar para aplicarles un estilo concreto en CSS.
+        Descendientes. Un selector descendiente está emparentado y subordinado a otro selector. 
+        Pseudoclases. Se trata de clases que responden a las acciones de los usuarios en la web. Deben estar emparentados con otros selectores. 
+
+
+
+cascada en css3 importancia y espificidad
+	regla de oro:si 2 o mas declaraciones tienen la misma importancia,la especificidad de las reglas de las regla decidira cual se debe utilizar...si las reglas poseen la misma especificidad, el orden en el que fueron escritas,dedinira el resultado final 
+	importancia:son todas aquellas declaraciones css que van seguidads de la directiva:!important,cualquier otra que no posea esta declaracion es considerada un declaracion normal
+	especificidad:
+    estilos en linea*1000
+    id*100
+    clases,atributos,pseudo-clases*10
+    elementos y pseudo-elementos*1
+	cada uno de estos se sumara y el que la declaracion que tenga mayor valor o mejor dicho especificidad sera el ganador
+	orden:el navegador lee los estilos de arriba a abajo y este ultimo sera el que dominara
+	
+selectores
+    etiquetas:es el selector mas simple siendo que solo es necesario que colocar la etiqueta que se le quiera hacer el cambio de estilo 
+        sintaxis:nombre_etiqueta{propiedad:valor;}
+    clases:hace referencia a las calses
+        sintaxis:.nombre_clase{propiedad:valor;}
+    id:#nombre_id{propiedad:valor;}
+    selector combinado descendiente: este se basa en la descendencia 
+    por ejemplo:h1 em{...} y esto se leeria como las etiquetas en que son descendiente de h1 ó section div em p{...},que se lee como las etiquetas em que es descendiente de p que esta dentro de div,que esta dentro de section
+    selector combinador hijo:ejemplo section>p{que se lee como:selecciona todas las etiquetas p que sean hijos de section}
+    selector combinado hermnano adyacente: p+div{son etiquetas hermanas,pero el primer elemento precede de forma inmediata el segundo,siendo los segundo quienes adquieren los estilos}
+
+selectores de atributos:
+        1.basico:etiqueta[atributo]{dice que las etiquetas que posean dicho atributo,sin tener en cuenta el valor}
+        2.con valor:etiqueta[atributo=valor]{dice que las etiquetas que posean dicho atributo,tomando en cuenta el valor}
+        3.contiene:etiqueta[atributo*=valor]{dice que las etiquetas que posean dicho atributo y que tengan una instancia del valor especificado}
+        4.comienza con:etiqueta[atributo^=valor]{dice que las etiquetas que posean dicho atributo y cuyo valor comienze exactamente con el valor del atibuto}
+        5.termina con:etiqueta[atributo$=valor]{dice que las etiquetas que posean dicho atributo y cuyo valor termine exactamente con el valor del atibuto}
+        6.separado por espacio:etiqueta[atributo(alt126=~)=valor]{dice que las etiquetas que posean dicho atributo pero su valor es igual a una lista de palabras separadas por un espacio en blanco y uno de ellos contiene exactamente el valor selecionado}
+
+selectores de subclases
+     sintaxis-- etiqueta:subclase{}
+    :link=se utiliza para enlaces web no visitados
+    :visited=se utiliza para enlaces web visitados

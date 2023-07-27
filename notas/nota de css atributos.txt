@@ -1,0 +1,113 @@
+fuentes{
+font-family:"nombre de la fuente",selecciona el tipo de fuente
+    tipos de fuente seguras:Arial,comic Sans MS,Courier New,Georgia,Impact, Trebuchet MS,Times New Roman,Verdana.
+
+
+@font-face{},para fuentes personalisadas, estas se pueden conseguir desde el navegador o desde paginas web como:
+    www.fontsquirrel.com
+    www.efonts.co
+    www.myfonts.com
+}
+colocar italica y negrita{
+font-style:cambia el estilo de las letras
+            normal:sin estilo.
+            italic:italica.
+
+font-weight:negrita,acepta valores 100 hasta 900,pero es preferible usar bold}
+
+definir tamaño de fuente
+font-size(el tamaño predefinido es de 16px)
+    se utilizan dos tpos de unidades
+        absolutas:Centimetros(cm),Milimetros(mm),Pulgadas(in),Picas(pc),Puntos(pt),Pixeles(px)
+            el valor de un pixel es aproximadamente 0.265(mm)
+        relativas:em(1em equivale al tamaño de la fuente definida por el padre.ejemplo:body-font-size:16px;h1-font-size:2em(32px),dependiendo el tamaño de padre se estableceda el tamaño de em en el hijo) y para definir anchura y altura(1em equivale al valor de la propiedad font-sizedel elemento que se vera afectado,si este hedera o posee un font-size de 35px entonces, 1em medida 35px),se puede colocar un comentario al lado del em especificando su tamaño en pixeles
+		  viewportwidth(vw),
+		  viewportheight(vh),
+		  %,
+		  rem.
+
+definicion de colores
+    Se puede declarar a traves de:
+        palabras claves:palabras que con solo escribirla te coloca un color especifico. se usa mas que todo para textear
+        Hexadecimalse utilizan los codigos hexadecimales para definir colores.
+        RGB Y RGBA:
+        HSL Y HSLA:sintasis hsl(0-250COLOR,0-100%saturacion,0-100%brillo) y hsla(0-250COLOR,0-100%saturacion,0-100%brillo,0-1transparencia)
+
+backgound
+    -color:color de fondo.
+    -imagen:imagen como fondo.
+    -repeat:Nos permite controlar como se repite el fondo. Este esta colocado para repetir tanto en el eje x & Y
+            repeat-x,con el valor solo se repite de forma horizontal
+            repeat-y,solo se repite en vertical
+            no-repeat,no se repetida
+    -position:se utiliza para alinear el fondo, posee dos valores (x, y) con estos valores en (0%,0%) el fondo se colocada en la esquina superior izquierda y con (100%,100%) se colocada en la esquina inferior derecha, cabe resalta que se puede poner en con porcentaje,con palabras claves o unidades de medidas
+    -attachment:La propiedad CSS background-attachment determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.
+                scroll:Si scroll es especificado, la imagen de fondo se moverá dentro de la pantalla junto al bloque que la contiene.
+                fixed:Si fixed es especificado, la imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor.
+    -size:se utiliza para cambiar el tamaño del fondo,tiene los mismos valores que position.tiene palabras claves   
+            contain:se utiliza para esclalar la imagen si que se distorcione hasta que llene un rango del eje y o x
+            cover:escala la imagn hasta que este llene el tamaño del contenedor, haciendo que la imagen sobresalga del contenedor, y despues se puede usar position para  acomodarlo al gusto.
+    -clip:La propiedad CSS background-clip especifica si el fondo de un elemento, ya sea el color o imagen, se extiende por debajo su borde.
+          border-box:El fondo se extiende hasta el borde exterior de el contenedor (pero por debajo de la frontera, en orden z).
+          padding-box:El fondo no se muestra a través del borde (el fondo se extiende hasta el borde exterior del padding).
+          content-box:El fondo se dibuja desde donde inicia el contenido.
+
+    multiples fondos:puedes aplicar múltiples imágenes de fondo a un elemento utilizando la propiedad background-image o la propiedad background. Las diferentes imágenes de fondo se separan por comas y se apilan una encima de la otra, donde la primera imagen está más cerca del espectador.para usar las propiedades del background a cada imagen se colocan los valores para cada uno dividido por una "," 
+    ejemplos
+     backgound-imagen:url(url_1),url(url_2);background-repeat:no-repeat(este afecta a url_1),repeat-x(este afecta a url_2);
+     esto eds igual con las otras propiedades
+
+como colocar todas las propiedades en uno solo:
+    se utiliza background y las propiedades en el siguiente orden
+        b-image b-repeat b-position / b-size b-attachment b-clip b-color;
+        ejemplo:
+        background:url(url) no-repeat left center /400px 400px  fixed border-box red;
+        pd:no es necesario colocar todos los valores
+        pd2:la barra invertida "/" se utiliza para definir el tamaño
+
+
+box-shadow:La propiedad `box-shadow` de CSS se utiliza para agregar efectos de sombra alrededor del marco de un elemento. Puedes establecer múltiples efectos separados por comas. Una sombra de caja se describe mediante desplazamientos X e Y en relación con el elemento, radio de difuminado y expansión, y color.
+    #ejemplo 
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+En este ejemplo, se ha agregado una sombra al elemento con el ID "ejemplo". La sombra tiene un desplazamiento horizontal de 5 píxeles y un desplazamiento vertical de 5 píxeles. El radio de difuminado es de 5 píxeles y el radio de expansión es de 0 píxeles. El color de la sombra es negro con una opacidad del 75%.
+
+
+
+Espaciado:se puede controlar el espaciado entre letras y palabras utilizando las propiedades `letter-spacing` y `word-spacing`, respectivamente.
+La propiedad `letter-spacing` se utiliza para especificar el espacio entre los caracteres de un texto. Aquí tienes un ejemplo de cómo aumentar el espacio entre las letras de un párrafo:
+  letter-spacing: 3px;
+La propiedad `word-spacing` se utiliza para especificar el espacio adicional entre las palabras de un texto. Aquí tienes un ejemplo de cómo aumentar el espacio entre las palabras de un párrafo:
+    word-spacing: 10px;
+
+
+Text align: La propiedad text-align de CSS se utiliza para especificar la alineación horizontal del texto dentro de un elemento. Los valores comunes para esta propiedad son left, right, center y justify.
+
+text-transform
+La propiedad text-transform de CSS se utiliza para especificar la capitalización del texto. 
+        none; No cambiar la capitalización del texto
+        capitalize; Poner en mayúscula la primera letra de cada palabra 
+        uppercase; Poner en mayúscula todas las letras 
+        lowercase; Poner en minúscula todas las letras 
+
+text-decoration
+La propiedad text-decoration de CSS se utiliza para especificar la decoración del texto. 
+none; No agregar decoración al texto 
+underline; Subrayar el texto 
+overline; Agregar una línea sobre el texto 
+line-through; Tachar el texto 
+
+LOs elementos inline- no funciona el weight y el height
+
+padding- distancia entre el contenido y el borde - es como un margen interno, se puede usar como un shorjan en donde los valores serian x(arriba) x(derecha) x(abajo) x(izquierda)
+o como 
+    -left,-top,-bottom,-right.
+
+
+Min y Max-Width ó heigth
+min-width y max-width son propiedades de CSS que se utilizan para establecer el ancho mínimo y máximo de un elemento especificado. La propiedad max-width anula la propiedad de ancho, pero min-width siempre anulará max-width, ya sea seguido antes o después del ancho en su declaración 1.
+
+Por ejemplo, si el valor que nosotros especifiquemos en width sea mayor que max-width, este último sobrescribirá el ancho del elemento al valor que tiene max-width. Así max-width define el ancho máximo que un elemento puede tener 2. Por otro lado, min-width define el mínimo tamaño que un elemento puede tener 2.
+
+    box-sizing:
+    La propiedad `box-sizing` en CSS define cómo el navegador debe calcular el ancho y alto total de un elemento. Por defecto en el modelo de caja de CSS, el ancho y alto asignado a un elemento es aplicado solo al contenido de la caja del elemento. Si el elemento tiene algún borde o relleno, este es entonces añadido al ancho y alto para alcanzar el tamaño de la caja que es desplegada en pantalla .
+    La propiedad `box-sizing` puede ser usada para ajustar este comportamiento. Hay dos valores principales para esta propiedad: `content-box` y `border-box`. `content-box` es el valor inicial y por defecto especificado por el estándar CSS. Las propiedades `width` y `height` no incluyen el borde, relleno o margen. Por otro lado, `border-box` le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluirán cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra.

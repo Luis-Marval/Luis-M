@@ -12,8 +12,11 @@ footer{
     color:white;background:black;
 }
 
-#pastel{
+.subtitle{
+    font-size: 1.3rem;
+    display: inline;
     margin-top:3px;
+    border-bottom: rgb(46, 233, 55) 1.5px solid;
 }
 
 #Principal{
@@ -25,14 +28,35 @@ footer{
 }
 
 #titulo-principal{
-    text-align: center;background-color: crimson;color: aqua;text-shadow: 3px 0px 1px rgba(137,11,119,0.39);
+    text-align: center;
+    background-color: crimson;
+    color: aqua;
+    text-shadow: 3px 0px 1px rgba(137,11,119,0.39);
+    box-shadow:0px 7px 0px 0px rgba(0,217,247,0.89);
+    margin-bottom: 7px;
+    border-radius: 0px 0px 12px 12px;
 }
 
-#otro{
+.otro{
     border-bottom: 3px black double;
 }
 
 .link:hover{
     color:crimson;
     font-size:24px;
+}
+
+body{
+    background: url(../images/iono-pokemon-escarlata-y-pokemon-purpura_3840x2160_xtrafondos.com.jpg),url(../images/edificios-ciudad-de-noche_3840x1633_xtrafondos.com.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:300vh;
+    background-attachment: fixed;
+}
+
+.list{
+    font-size: 1.3rem;
+}
+.extra{
+    border: 2px red solid;
 }

@@ -1,0 +1,211 @@
+etiquetas meta
+	son etiquetas utilizadas por el navegador para posicionar la pagina web
+	sintaxis <meta name="" content="">
+	como se ve la etiqueta posee dos atributos 
+		name:el cual se usa para identificar el tipo de metadato
+		content:el contenido que posee ese metadato
+	tambien se puede utlizar para evitar fallos de escritura en el navegador como la ñ o los acentos su sintaxis seria <meta charset="UTF-8">
+
+Usos de la etiqueta <strong>
+	Texto informativo;
+	 Alertas;
+	 Advertencias;
+	 Recordatorios;
+	
+usos de la etiqueta <em>
+	Enfasis en un texto
+	
+Titulos
+	h1 es la etiqueta de titulo mas importante que busca el navegador
+	h2 subtitulos
+
+Comentarios
+	sintaxis:<!--text-->
+	se puede utilizar para saber el final de una etiqueta
+
+lista
+	existen dos tipos de lista
+		lista ordenada sintaxis:<ol></ol>
+		lista desordenadas sintaxis:<ul></ul>
+	para añadir elementos a la lista se utiliza la etiqueta <li></li>
+	para añadir lista con varios elementos sin escribir tanto se usa [etiqueta de lista]>li{elementos}*cantidad de elementos que quieras		
+	posee un atributo type el cual nos permite cambiar el simbolo de la ista
+
+insertar carecteres especiales(Entidades HTML)
+	Para que el navegador detecte los carecteres especiales se usan las entidades HTML sintaxis: &entidad;                                                                                                    
+	lista de codigos para caracteres especiales:https://html.spec.whatwg.org/multipage/named-characters.html
+	<meta charsep="UTF-8"> se utiliza para que el navegadro detecte de manera directa los caracteres sin necesidad de colocar las entidades HTML
+
+Definir abreviatura con <abbr>
+	sirve para colocar abreviaturas en la pagina web
+	ejemplo <abbr title="Organizacion de naciones unidas">ONU</abbr>
+	al hacer esto se mostrada la abreviatura y si se coloca en curso encima se mostrada el contenido de el atributo title
+	
+Definiendo Fecha y hora <TIME>
+	se utiliza para que los navegadores entiendan que esta hace referencia a una fecha y lo traten de manera distinta
+	sintaxis:<time datetime="AAAA-MM-DD"||"HH:MM:SS"||"AAAA-MM-DDTHH:MM||"AAAA-MM-DDTHH:MMZ">el dia</time>
+	se entiende que al poner Z al final de la hora como la hora mundial,siendo que se refiere a las 6 en cada pais
+
+etiqueta <small>
+	 se utiliza para:
+	 	Definirlos derechos de autores
+		descargo de responsabilidad
+		Declaracion legal
+	ejemplos:
+	<small>&copy;2014 Todos los derechos reservados</small> 
+	<small>Prohibida la Distribucion de este articulo sin la autorizacion del autor</small>
+	<p>ahora puedes hacer llamadas de forma gratuita <small>(Promocion valida hasta el <time datetime="2023-06-31">31/06/2023</time> solopara equipos post-pago)</small></p>
+	<small><a href="enlace a los prosibles cargos">se pueden aplicar cargos a la compra de este producto</a></small>
+
+figure y figcaption
+	figure funciona como un cuadro en el cual se coloca el contenido y el figcaption
+	sintaxis:<figure>content(img,video,etc)<figcaption></figcaption></figure>
+	figcaption se puede omitir y solo se puede poser una vez
+	figure puede contener:Videos,Fotos,Graficos y Contenido autonomo(tablas estadisticas,etc)
+
+Citas<cite></cite>
+	son citas iguales que los trabajos de investigacion
+	poseen un atributo lang el cual se utiliza para especiar el lenguaje de origen de la cita
+
+citas con q y blockquote
+	q se utiliza poara referencia de una linea dentro de un parrafo y el atributo lang igual a cite
+	y el atributo cite se coloca la url de la pagina de donde sale la cita este solo es para la maquita,no para el usuario
+	y para los casos en donde se necesite citar texto de mayor tamaño que no entra en un parrafó,usaremos la etiqueta <blockquote>,este no puede estar dentro de una etiqueta <p> pero si la cita es mas grade que un parrafo se utilizara la etiqueta <p> en cada parrafo dentro del blockquote,resumiendo blockquote no puede estar dentro de p,pero si al reves.
+	para colocar un titulo a la cita se puede utiliza figure y figcaption siendo el blockquote el contenido,pero tambien se puede colocar detro de blockquote un footer para colocar el titulo
+
+la etiqueta invisibles span
+	nos sirve para encerrar un contenido(normalmente texto corto) y poder colocar algun atributo html como:id,class,lang,ect.
+
+<meter>
+	graficas estilo barras
+	sintaxis:<meter min="valr minimo" max="valor maximo="value"valor actual"></meter>
+	en que se puede usar
+		el espacio utilizadoe ne l Distribucion
+		el numero de boletos vendidos
+		resultados de votos
+	atributo	
+		high:valor demaciado alto
+		low:valor demaciado bajo
+		optimum:valor optimo
+
+<progress>
+	etiqueta utilizada para medir el progreso de una accion normalmente se utiliza con javascritf
+	solo tiene dos atributos max y value,funcionando igual que en meter
+
+como insertar imagenes en web
+	existen varios formatos y aqui se explica como y cuando utilizarlos
+	gif:se utiliza para crear logos o pequeños detalles en el sitio y tienen que que ser imagenes simples o monocromas,solo posee 252 colores
+	png:es mas detallo que gif y al igual que el ultimo posee transparencia,usar en logotipos, el uso desmerido de estas imagenes puede realentizar tu pagina.posee la mayor variedad de colores
+	jpge:se utiliza cuando se quiera diseños bonitos con calidad aceptable y que pesen poco,tabien en la galeria de imagenes,para imagenes de mas grandes que 600px,este formato no posee transparencia.posee mayor camtidad de colores que gif pero menor que png
+
+etiqueta<form> 
+	sintaxis
+		<form action="nombre_del archivo" method="get/post">......formularios......</form>
+		dentro del atributo action se colocada el nombre del script para procesarlo
+		el atributo method posee dos atributos	
+			get:cuando se envian los datos del formulario se muestra en la url,no es aconsejable que se use en formularios largos(las url pueden tener maximo tres mil caracteres);no sirve para imformacion sencible
+			post:los datos enviados del formalario se mandan de forma interna
+		para que el usuario ingrese los datos peridos por el formulario se utiliza la etiqueta <input>
+
+etiqueta <input>
+	sintaxis: <input type="tipo de campo" value="valor predeterminado" name="nombre del elemento" size="numero-tamaño de la barra" maxlength="maximo de caracteres" minlength="minimo de caracteres" placeholder="un texto fantasma que resaparece cunado escribimos en el cuadro">
+		en el atributo type se colocara el tipo de dato que quedamos del usuario 	entre ellos:
+			text:texto simple
+			email:correo electronico
+			password:contraseña
+			radio:botones radiales(botones para opciones,para esto todos los input radio tiene que tener el mismo atributo en name)
+			checkbox:casila de verificaion, se utiliza cuando queremos que el usuario pueda marcar mas de una opcion
+			submit:boton de envio
+			reset:borrar datos del formulario
+			url:para resivir url dentro de contenido
+			tel:telefono del usuario,los telefonos lo detectan y colocan el teclado en numerico
+			search:no posee validacion
+			number:caja de numeros,solo numeros, este posee atributos como:
+				min:valor minimo
+				max:valor maximo
+				step:valor de salto de numeros
+			range:barra de rango.posee los atributos min="valor minimo" y max="valor maximo"
+			date:Fecha
+			time:Hora
+			color:colores
+
+etiqueta <textarea>
+	sintaxis:<textarea cols="x" rows="x"></textarea>
+	sirve para Comentarios
+	atributos
+		cols:determina la cantidad de caracteres visibles horizontales
+		rows:etermina cantidad de caracteres visibles 
+			los valores por defecto son 20
+
+etiqueta <select>
+	sintaxis
+		<select>
+			<option value="xxx">xxx</option>
+		</select>
+		donde la etiqueta select funciona como una caja de seleccion de varias opciones los cuales se representan con la etiqueta <option> 
+		en esta etiqueta tiene el atributo value que se mandara al js dependiendo de que ocion mando el usuario
+		para que el usuario selecione varias opciones se utilisa el atributo multiple
+		con la etirueta optgroup se puede crear una lista anidadas en select y con su atributo label se le da titulo al optgroup
+
+nuevos atributos de html5 para formularios
+	placeholder:texto fantasma para sugerencia disponible para las etiquetas input y textarea
+	autofocus:para que el cursor aparesca donde este este atributo
+	required:caompos obigatorios
+	disabled:desabilita el cuadro
+	readonly:solo lectura,no escritura
+
+header(cabezera)
+	cabezedo de la pagina
+
+nav
+	El elemento HTML <nav> representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.
+		Notas de uso
+			No es necesario que todos los enlaces estén contenidos en un elemento <nav>. <nav> está destinado sólo para el bloque principal de enlaces de navegación; por lo general, el elemento <footer> a menudo tiene una lista de enlaces que no necesitan estar en un elemento <nav>.
+			Un documento puede tener varios elementos <nav>, por ejemplo, uno para la navegación del sitio y otro para la navegación dentro de la página. aria-labelledby puede ser utilizado en tal caso para promover la accesibilidad, ver ejemplo.
+			Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios con discapacidades, pueden usar este elemento para determinar si se omite la representación inicial del contenido de solo navegación.
+
+main
+	la etiqueta main se utiliza para definir el area principal de un sitio
+
+article
+	es utilizada para definir un contenido autónomo y de importancia en una página web
+	pueden ser anidadas
+	La etiqueta <article> puede tener encabezados, párrafos, listas, imágenes y otros elementos HTML como hijos.
+	Algunos ejemplos podrían ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, el comentario de un usuario, un widget o gadget interactivo, o cualquier otro elemento de contenido independiente.
+
+Sectión
+	encerrar objetos con una misma tematica como seria:introduccion,noticias e informacion de contactos,etc.
+	recomendaciones
+		no utilizar section si lo unico que quiere es agrupar contenidopara aplicar estilos(para se eso se usa div)
+		utiliza section cuando su contenido tiene un tema distinto en el contexto en que se encuentra
+		proporcionar title a las section
+
+aside
+	es una etiqueta estructurales que sirve para contener contenido secundario
+	ejemplos
+		lista de articulos,publicidad,bloque para redes sociales,lista de productos relacionadas,calendario de eventos,bloque donde se encuentre la informacion del autor,etc
+	es aconsejable tener la etiqueta main antes que la etiqueta aside
+	el aside puede estar dentro de la etiqueta main
+	no colocar el nav dentro de aside
+
+footer(pie de pagina)	
+	footer representa el pie de pagina de la etiqueta que la contiene
+	
+div(contenedores genericos)
+	sirve igual que la etiqueta section pero este no posee valor semantico y se usa mas para añadir estilos
+
+video
+	etiqueta para colocar video	
+		atributos	
+			controls:muestra el menu del video, el cual dependiendo del navegador se bera distinto
+			autoplay:para que el video se reprodusca de manera automatica
+			loop:el video se repetida despues de finalizar
+			poster:muestra una imagen al fondo del video mientras se carga
+		
+formatos de video en la web	
+	OGG:gratuito. Codec video:Theora, Codec Audio:Vorbis.
+	WebM:gratuito. Codec video:VP8, Codec Audio:Vorbis.
+	MP4:Comercial. Codec video:H.264, Codec Audio:AAC.
+
+Audio
+	la sintaxis es la misma que la  etiqueta video y posee los mismos atributos

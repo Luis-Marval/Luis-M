@@ -1,0 +1,32 @@
+*{
+    font-size: 20px;
+}
+section{
+    border: 5px red double;
+    padding: 5px;
+    background-color: rgb(228, 99, 40);
+    min-width: 250px;
+}
+article{
+    display:inline-block;
+    border: 10px blue solid;
+    background-color: white;
+    padding: 0;
+    margin: 8px;
+    border-radius: 10px;
+}
+p{
+ margin:0;
+ background-color: rgb(41, 221, 221);
+ padding:5px;
+}
+strong{
+    border: 2px solid red;
+
+}
+
+.raya{
+    background:yellow;
+    height:50px;
+    margin:25px 0;
+}

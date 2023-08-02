@@ -110,4 +110,48 @@ Por ejemplo, si el valor que nosotros especifiquemos en width sea mayor que max-
 
     box-sizing:
     La propiedad `box-sizing` en CSS define cómo el navegador debe calcular el ancho y alto total de un elemento. Por defecto en el modelo de caja de CSS, el ancho y alto asignado a un elemento es aplicado solo al contenido de la caja del elemento. Si el elemento tiene algún borde o relleno, este es entonces añadido al ancho y alto para alcanzar el tamaño de la caja que es desplegada en pantalla .
-    La propiedad `box-sizing` puede ser usada para ajustar este comportamiento. Hay dos valores principales para esta propiedad: `content-box` y `border-box`. `content-box` es el valor inicial y por defecto especificado por el estándar CSS. Las propiedades `width` y `height` no incluyen el borde, relleno o margen. Por otro lado, `border-box` le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluirán cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra.
+    La propiedad `box-sizing` puede ser usada para ajustar este comportamiento. Hay dos valores principales para esta propiedad:  `content-box` es el valor inicial y por defecto especificado por el estándar CSS. Las propiedades `width` y `height` no incluyen el borde, relleno o margen. Por otro lado 
+    `border-box` le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluirán cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra
+    
+    
+display:se utiliza parcambiar la foma enl que dpresenta un objeto
+
+    -block: Este valor hace que el elemento genere un cuadro de bloque, generando saltos de línea tanto antes como después del elemento cuando está en el flujo normal. Los elementos de bloque suelen empezar en una nueva línea y ocupar todo el ancho disponible.
+    -inline: Este valor hace que el elemento genere uno o más cuadros en línea que no generan saltos de línea antes o después de ellos. En el flujo normal, el siguiente elemento estará en la misma línea si hay espacio. Los elementos en línea no aceptan dimensiones de ancho y alto, y no permiten saltos de línea.
+    -inline-block: Este valor es similar a `inline`, pero permite definir dimensiones de ancho y alto para el elemento.
+    -flex: Este valor hace que el elemento se comporte como un contenedor flexible y sus hijos se convierten en elementos flexibles. Esto permite alinear y distribuir espacio entre los elementos dentro de un contenedor, incluso cuando sus tamaños son desconocidos y/o dinámicos.
+    -grid: Este valor hace que el elemento se comporte como un contenedor de cuadrícula y sus hijos se convierten en elementos de cuadrícula. Esto permite crear diseños complejos alineando elementos en filas y columnas.
+    -none: Este valor hace que el elemento no se muestre en la página. El documento se procesa como si el elemento no existiera en el árbol de documentos.
+
+
+
+float:La propiedad float de CSS ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado. El elemento es removido del normal flujo de la página, aunque aún sigue siendo parte del flujo (a diferencia del posicionamiento absoluto).
+    propiedades:left,right,none,inherit
+
+La propiedad overflow de CSS especifica si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque1. Esta propiedad tiene varios valores que puedes usar para controlar cómo se muestra el contenido excedente:
+visible: El contenido no es recortado y se muestra fuera del elemento contenedor. Este es el valor por defecto.
+hidden: El contenido es recortado y no se muestran barras de desplazamiento.
+scroll: El contenido es recortado y se muestran barras de desplazamiento, independientemente de si hay contenido excedente o no.
+auto: El comportamiento depende del agente de usuario. En la mayoría de los navegadores, se muestran barras de desplazamiento solo si hay contenido excedente1.
+Por ejemplo, si tienes un elemento con una altura fija y quieres que el contenido excedente se muestre con una barra de desplazamiento vertical, puedes usar el siguiente código CSS:
+
+.elemento {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+tambien funciona para completar el espacio del float
+
+CLear
+La propiedad clear de CSS especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos elementos flotantes y no flotantes
+    none: El elemento no es movido hacia abajo para limpiar elementos flotantes anteriores. Este es el valor por defecto.
+     left: El elemento es movido hacia abajo para limpiar elementos flotantes a la izquierda.
+    right: El elemento es movido hacia abajo para limpiar elementos flotantes a la derecha.
+    both: El elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha.
+
+z-index:
+    La propiedad z-index de CSS indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor1.
+    Por ejemplo, si tienes dos elementos posicionados absolutamente que se superponen y quieres que uno de ellos aparezca encima del otro, puedes usar la propiedad z-index para especificar cuál de los dos elementos debe aparecer encima. El siguiente código CSS muestra cómo hacerlo:
+        .elemento1 {position: absolute;z-index: 1;}
+        .elemento2 {position: absolute;z-index: 2;}
+    En este ejemplo, el .elemento2 aparecerá encima del .elemento1 porque tiene un valor z-index mayor.

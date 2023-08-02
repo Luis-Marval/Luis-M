@@ -1,1 +1,20 @@
-.p{display: inline-block;}
+.p{
+    display: inline-block;
+}
+img{
+    width: 415px;
+    float: left;
+    margin-right: -400px;
+}
+h1{
+    margin-bottom: 20px;
+    color: aqua;
+}
+
+input[type=email] {
+    margin-bottom: 20px;
+}
+
+label[for=correo],label[for=contraseña]{
+    color: aqua;
+}

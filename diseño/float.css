@@ -1,0 +1,20 @@
+section{
+    overflow: hidden;
+}
+aside{
+    float: left;
+    width: 50%;
+}
+article{
+    float: right;
+    width: 50%;
+}
+footer{
+    background-color: black;
+    color: burlywood;
+}
+header{
+    color: brown;
+    background-color: rebeccapurple;
+    border:2px solid blue ;
+}

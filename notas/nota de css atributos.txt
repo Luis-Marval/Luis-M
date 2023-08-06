@@ -149,6 +149,21 @@ La propiedad clear de CSS especifica si un elemento puede estar al lado de eleme
     right: El elemento es movido hacia abajo para limpiar elementos flotantes a la derecha.
     both: El elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha.
 
+visibility
+    La propiedad visibility en CSS3 se usa para mostrar u ocultar un elemento sin cambiar el diseño de un documento. La propiedad también puede ocultar filas o columnas en una <table>. La propiedad visibility tiene tres valores: visible, hidden y collapse. El valor predeterminado es visible. El valor hidden oculta un elemento, pero deja el espacio donde debería aparecer. El valor collapse oculta filas o columnas de una tabla.
+    a DIFERENCIA DE display:NONE este oculta el elemento pero sigue existiendo la pagina
+
+Position:La propiedad position de CSS especifica cómo un elemento es posicionado en el documento. Las propiedades top, right, bottom, y left determinan la ubicación final de los elementos posicionados1. Un elemento posicionado es un elemento cuyo valor computado de position es relative, absolute, fixed, o sticky (en otras palabras, cualquiera excepto static).
+    Static: Es el valor predeterminado del atributo y el posicionamiento normal de los elementos en la página. Quiere decir que los elementos se colocarán según el flujo normal del HTML, es decir, según estén escritos en el propio código HTML3.
+    
+    Fixed: Un elemento con posición fija es posicionado en relación con la ventana gráfica, lo que significa que siempre se queda en el mismo lugar incluso si la página se desplaza1.
+    
+    Sticky: Un elemento con posición pegajosa se basa en la posición relativa del usuario dentro del flujo normal, y luego se compensa en relación con su ancestro más cercano de desplazamiento y la ventana gráfica si se aplica1.
+    
+    Relative: Un elemento con posición relativa se coloca en relación con su posición normal. Las propiedades top, right, bottom, y left determinan la ubicación final del elemento posicionado1.
+    
+    Absolute: Un elemento con posición absoluta se coloca en relación con su ancestro posicionado más cercano, si lo hay; de lo contrario, se coloca en relación con el bloque inicial que contiene1.
+
 z-index:
     La propiedad z-index de CSS indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor1.
     Por ejemplo, si tienes dos elementos posicionados absolutamente que se superponen y quieres que uno de ellos aparezca encima del otro, puedes usar la propiedad z-index para especificar cuál de los dos elementos debe aparecer encima. El siguiente código CSS muestra cómo hacerlo:

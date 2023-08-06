@@ -1,7 +1,10 @@
-*{ margin:0;}
+*{
+     margin:0;
+    font-family:'Times New Roman', Arial;
+}
 
 nav{
-    outline: black solid 2px;
+  padding: 2.5px 0;
 }
 
 ul{
@@ -32,7 +35,7 @@ footer{
     background-color: crimson;
     color: aqua;
     text-shadow: 3px 0px 1px rgba(137,11,119,0.39);
-    box-shadow:0px 7px 0px 0px rgba(0,217,247,0.89);
+    box-shadow:0px 9px 0px 0px rgba(0,217,247,0.89);
     margin-bottom: 7px;
     border-radius: 0px 0px 12px 12px;
 }
@@ -42,12 +45,12 @@ footer{
 }
 
 .link:hover{
-    color:crimson;
+    color:greenyellow;
     font-size:24px;
 }
 
 body{
-    background: url(../images/iono-pokemon-escarlata-y-pokemon-purpura_3840x2160_xtrafondos.com.jpg),url(../images/edificios-ciudad-de-noche_3840x1633_xtrafondos.com.jpg);
+    background: url(../images/iono-pokemon-escarlata-y-pokemon-purpura_3840x2160_xtrafondos.com.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size:300vh;
@@ -58,5 +61,32 @@ body{
     font-size: 1.3rem;
 }
 .extra{
+    box-sizing: border-box;
     border: 2px red solid;
+    float:right;
+    width: 50%;
+    line-height: 30px;
 }
+
+#dix{
+    float: left;
+    width: 50%;
+}
+
+#Cabezera-dix{
+    background: crimson;
+    position: sticky;
+    top:0;
+    display: inline-block;
+    width: 100%;   
+    border-radius: 0px 0px 12px 12px;
+}
+
+ul li{
+    display: inline-block;
+    margin-right:8px;
+}
+section{
+    overflow: hidden;
+}
+
